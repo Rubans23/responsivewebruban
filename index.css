@@ -1,0 +1,832 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hsearch-bar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.h-input{
+   height: 35px;
+   border-radius: 0%;
+   border: 1px solid #ccc;
+}
+
+.h-selector{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.h-selector-search-logo{
+    position: absolute;
+    left: 4px;
+    top: 6px;   
+}
+
+#h-location-input{
+    width:140px;
+    height: 38px;
+    text-align: center; 
+    font-size: 12px; 
+}
+#h-search-input{
+    width: 35vw;
+    padding-left: 20px;
+}
+#h-search-button{
+    height: 38px;
+    width: 100px;
+    background-color:#EC52A1;
+    border: none;
+    cursor: pointer;
+    color:#f8f8f8;
+    text-transform: uppercase;
+}
+
+.contact_logo{
+    transform: rotate(-70deg);
+    width: 11px;
+    padding-right: 2px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+#h-search-button:hover{
+    box-shadow: rgba(124, 97, 97, 0.25) 0px 30px 60px -12px inset, rgba(215, 155, 155, 0.3) 0px 18px 36px -18px inset;
+    transition: box-shadow 0.3s;
+    color: #ffffff;
+    border: 1px solid #ccc;
+}
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 20px 190px 0px;
+    padding: 0px 20px ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    color: #555;
+}
+.container h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+.container_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+}
+.container_text{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    position: relative;
+}
+
+.container_text > h1{
+    color: #0A5EB0;
+    font-size: 18px;
+}
+.container_text_span{
+    font-size: 8px;
+    padding-left: 3px;
+    display: inline-block;
+    background-color: #0A5EB0;
+    margin-right: 15px;
+    color: #f8f8f8;
+    border-radius: 04px;
+    padding: 1px 4px ;
+}
+.container_text > p{
+    font-size:12px ;
+    line-height: 2;
+}
+.container_map{
+    width: 100%;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.container_text_contact{
+    font-size: 13px;
+}
+
+iframe{
+    width: 270px;
+    height: 270px;
+}
+.container_about{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.container_about > p {
+    font-size: 12px;
+}
+
+
+
+.pushable {
+    background: #ade76f;
+    border-radius: 6px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+  .front {
+    display: block;
+    padding: 5px 7px;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #a5f351;
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+ .float{
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2px;
+ }
+
+ .price-container{
+    width: 550px;
+    margin: -10px 190px;
+    padding: 5px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    color: #555;
+ }
+
+ .venue-details{
+    width: 550px;
+    margin: -10px 190px;
+    padding: 5px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    color: #555;
+ }
+
+ .price-container-header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    font-size: 13px;
+ }
+ 
+ .rent, .deposit, .cash {
+    grid-row-start: 2;
+ }
+ .capacity{
+    grid-row-start: 3;
+ }
+
+ .price-line{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    padding-top: 20px;
+ }
+ .image-line{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    width: 100%;
+    padding-top: 50px;
+ }
+ .Venue-line{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+ }
+.amenities-line{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.os-line{
+    padding-top: 30px;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.Price-details-svg{
+    padding-right: 15px;
+ }
+ .lower-text{
+    padding-left: 35px;
+    color: #191919;
+ }
+
+ .price-container-h2{
+    margin-top: 10px;
+ }
+.upper-text{
+    display: inline;
+}
+
+#section{
+    padding-bottom: 20px;
+}
+
+.Amenities{
+    padding-top: 25px;
+}
+
+.Image-gallery{
+    width: 50px;
+    margin: -10px 190px;
+    padding: 5px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    color: #555; 
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.image-container {
+    width: 82px; /* Set the desired square size */
+    aspect-ratio: 1 / 1; /* Ensures a perfect square */
+    overflow: hidden; /* Hides any overflowing parts of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3; /* Optional: background color */
+    border: 1px solid #ccc; /* Optional: border for the square */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zooms in and fills the square, cropping excess parts */
+}
+.overlay-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.firstlineimage{
+    grid-row-start: 2;
+}
+
+.secondlineimage{
+    grid-row-start: 3;
+}
+
+.os-checkbox{
+    margin-right: 15px;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .checkbox-wrapper-13 input[type=checkbox] {
+      --active: #275EFE;
+      --active-inner: #fff;
+      --focus: 2px rgba(39, 94, 254, .3);
+      --border: #BBC1E1;
+      --border-hover: #275EFE;
+      --background: #fff;
+      --disabled: #F6F8FF;
+      --disabled-inner: #E1E6F9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 21px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: .3s;
+      --d-t: .6s;
+      --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:disabled + label {
+      cursor: not-allowed;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+      width: 21px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+      --o: 1;
+    }
+    .checkbox-wrapper-13 input[type=checkbox] + label {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+      border-radius: 7px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 9px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 7px;
+      top: 4px;
+      transform: rotate(var(--r, 20deg));
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+  }
+
+  .checkbox-wrapper-13 * {
+    box-sizing: inherit;
+  }
+  .checkbox-wrapper-13 *:before,
+  .checkbox-wrapper-13 *:after {
+    box-sizing: inherit;
+  }
+  #c1-13{
+    margin-right: 10px;
+    margin-top: -3px;
+  }
+
+ .bottom{
+    display: flex;
+    color: #555;
+    flex-direction: row;
+ }
+
+ .bottom-left{
+    width: 43%;
+    padding: 10px 5px 10px 40px;
+ }
+.bottom-text{
+    font-size: 10px;
+}
+.bottom-link{
+    font-size: 10px;
+}
+
+.bottom-col-header{
+    font-weight: bold;
+}
+.bottom-right{
+    display: flex;
+    font-size: 10px;
+    padding-left: 40px;
+    gap: 60px;
+}
+.bottom-col{
+    width: 80px;
+}
+
+ footer{
+    background-color: #f8f8f8;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: -2px;
+}
+
+@media (min-width: 768px) and (max-width: 1050px){
+    .container_text{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        padding-bottom: 20px;
+    }
+    
+    .container_image{
+        width: 200px;
+    }
+    .container_image img{
+        width: 100%;
+    }
+    .container_about{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 3;
+    }
+    .float{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        left: 0;
+        bottom: -10px;
+    }
+    h1,h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+    #head-c-text{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+     .bottom-left{
+        width: 60%;
+        padding-bottom: 50px;
+    }
+    .bottom-right{
+
+        justify-content: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 240px;
+        height: 240px;
+    }
+     .price-container, .Image-gallery{
+        margin: 0px 100px 0px;
+    }
+    .container{
+        width: 80%;
+        margin: 50px;
+
+    }
+    .venue-details{
+        margin: 0px 100px 0px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+    #header{
+        display: block;
+    }
+    
+    .contact{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .hsearch-bar{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        margin: 30px;
+        padding-top: 10px;
+    }
+    iframe {
+        width: 180px;
+        height: 180px;
+    }
+    .container_map{
+        grid-column-start: 2;
+        padding: 10px;
+    }
+    .container_text{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        padding-bottom: 40px;
+    }
+    .container_about{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 3;
+    }
+    .container_image{
+        width: 200px;
+        height: 200px;
+    }
+    .container_image img{
+        width: 180px;
+    }
+    .float{
+       left: 0;
+    }
+    .container_text h1{
+        font-size: 23px;
+    }
+    .price-container, .Image-gallery , .price-container , .venue-details{
+        margin: 0;
+        width: 80vw;
+        padding: 0 50px;
+    }
+    h1,h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+    #first{
+        grid-row-start: 2;
+    }
+    #second{
+        grid-row-start: 3;
+    }
+    #thrid{
+        grid-row-start: 4;
+
+    }
+    .image-line{
+        grid-row-start: 5;
+    }
+    .Image-gallery{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+        width: 19px;
+     }
+    .bottom-left{
+        padding-bottom: 50px;
+        width: 80vw;
+        margin-left: -40px;
+    }
+    .bottom-right{
+        width: 80vw;
+        justify-content: center;
+    }
+    .bottom{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    .price-container{
+        gap: 5px;
+        grid-template-columns: repeat(3,0.5fr);
+    }
+    .venue-details{
+        display: flex;
+        width: 80vw
+    }
+    .bottom-col-para p{
+        font-size: 5px;
+    }
+    .bottom-col p{
+        font-size: 7px;
+    }
+    
+}
+
+@media (min-width: 350px) and (max-width: 480px){
+    #header{
+        display: block;
+    }
+    .contact{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .hsearch-bar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+    }
+    #h-location-input {
+        width: 80vw;
+    }
+    #h-search-input {
+        width: 74.2vw;
+    }
+    #h-search-button{
+        width: 80vw;
+    }
+    .container{
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    iframe {
+        width: 100px;
+        height: 180px;
+    }
+    .mob-hide, #headerline-top{
+        display: none;
+    }
+    #section{
+        margin: 30px;
+        padding: 0;
+    }
+    
+    .container_map{
+        grid-column-start: 2;
+        padding: 10px;
+    }
+    .container_text{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        padding-bottom: 40px;
+    }
+    .container_about{
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 3;
+    }
+    .container_image{
+        width: 200px;
+        height: 200px;
+    }
+    .container_image img{
+        width: 180px;
+    }
+    .float{
+       left: 0;
+    }
+    .container_text h1{
+        font-size: 23px;
+    }
+    .price-container, .Image-gallery , .price-container , .venue-details{
+        margin: 0;
+    }
+    .price-container{
+        grid-template-columns: repeat(3, 0.2fr)!important;
+        margin: 10px;
+    }
+    h1,h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .mo1{
+        grid-row-start: 2;
+    }
+    .mob2{
+        grid-row-start: 3;
+    }
+    .mob3{
+        grid-row-start: 4;
+    }
+    .mob4{
+        grid-row-start: 5;
+    }
+    
+    .image-line{
+        grid-row-start: 6;
+    }
+    .Image-gallery{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: -20px;
+    }
+    .checkbox-wrapper-13 input[type=checkbox]:not(.switch) {
+        width: 19px;
+     }
+    .bottom-left{
+        padding-bottom: 50px;
+        width: 80vw;
+        margin-left: -40px;
+    }
+    .bottom-right{
+        width: 80vw;
+        justify-content: center;
+    }
+    .bottom{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    .price-container{
+        display: block;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        width: 80vw;
+        padding: 0;
+        margin: 0;
+    }
+    .venue-details{
+        display: flex;
+        width: 70vw
+    }
+    .bottom-col-para p{
+        font-size: 5px;
+    }
+    .bottom-col p{
+        font-size: 7px;
+    }
+    footer{
+        padding-bottom: 10px;
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+    }
+    .newhide, .h-selector-search-logo{
+        display: none;
+    }
+}
+
+
+
+

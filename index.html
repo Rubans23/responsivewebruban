@@ -1,0 +1,446 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResponsivePage</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+  
+</head>
+<body id="body">
+
+<header id="header">
+    <div class="logo">
+        <img src="./main_logo.png" alt="Logo" width="40px">
+    </div>
+
+    <form onsubmit="validateSearchForm(event)">
+        <div class="hsearch-bar">
+            <div class="h-selector">
+                <img class="h-selector-search-logo" src="./location.svg" alt="" width="25px">
+                <select id="h-location-input" class="h-input">
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Tambaram">Tambaram</option>
+                    <option value="Velachery">Velachery</option>
+                    <option value="Adyar">Adyar</option>
+                    <option value="T. Nagar">T. Nagar</option>
+                </select>
+            </div>
+            <input class="h-input" id="h-search-input" type="text" placeholder="Search venues, categories">
+            <button class="h-input" id="h-search-button" type="submit">Search</button>
+        </div>
+    </form>
+    <div class="contact">
+        <img class="contact_logo" src="./phone.png" alt=""> 0814-400-2222
+    </div>
+</header>
+
+<div class="hero">
+    <img src="./Venue.jpg" alt="Venue Image">
+</div>
+
+<div class="container">
+    <div class="container_image">
+        <img src="./square.jpeg" alt="wedding" width="100px">
+    </div>
+    
+    <div class="container_text">
+        <h1>Blue Flag Beach Resort</h1>
+        <p class="head-c-text">
+            <span class="container_text_span">4.0</span>
+            <span class="mob-hide">ECR - Old Mahabalipuram Rd,</span>
+            Kovalam, Tamil Nadu 603112
+        </p>
+        <div class="float">
+            <img class="contact_logo" src="./phone.png" alt=""> 
+            <span class="container_text_contact">0814-400-2222</span>
+            <button class="pushable">
+                <span class="front">
+                    Get Assistance <img src="./right-arrow.svg" alt="arrow" height="12px">
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container_map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.903766430684!2d90.37749011498167!3d23.750854394591167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44b1c2c6d64e129!2zQ0o4QUY4Z280Tm9pV3hNcTY!5e0!3m2!1sen!2sin!4v1674820645271!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="container_about">
+        <h2>About this Listing</h2>
+        <p>Blue Flag Beach Resort is located on the Eastern coast of Chennai. Strategically placed away from the city life of Chennai, this resort is your premium choice for that destination wedding you have in mind. This resort stands firm along the city's coastal length, brimming its edges with water splashes to calm your senses. Their wedding arrangements speak for themselves as they replicate your dreams.</p>
+        <hr id="headerline-top" style="margin-top: 40px;">
+    </div>
+</div>
+
+<div id="section" class="price-container">
+    <div class="price-container-header">
+        <h1>Price Details</h1>
+
+    </div>
+    <div class="price-container-h2 rent">
+        <span class="inline" style="display:inline;">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Rent</p>
+        </span>
+        
+        <p class="lower-text">60000</p>
+
+    </div>
+    <div class="price-container-h2 deposit">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Deposit </p>
+        </span>
+        <p class="lower-text">40000</p>
+    </div>
+    <div class="price-container-h2 cash">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Cash / Card </p>
+        </span>
+        
+        <p class="lower-text">Cash</p>
+    </div>
+    <div class="price-container-h2 capacity">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Capacity </p>
+        </span>
+        
+        <p class="lower-text">1000+</p>
+    </div>
+    <span class="price-line"><hr id="line"  ></span>
+</div>
+
+
+
+<div class="Image-gallery">
+    <div class="price-container-header">
+        <h1>More Venue</h1>
+    </div>
+    <div id="first" class="image-container firstlineimage mob1">
+        <img src="./gallery/1.webp" alt="images">
+    </div>
+    <div id="first"  class="image-container firstlineimage mob1">
+        <img src="./gallery/2.webp" alt="images">
+    </div>
+    <div id="first"  class="image-container firstlineimage mob1">
+        <img src="./gallery/3.webp" alt="images">
+    </div>
+    <div id="first"  class="image-container firstlineimage mob2">
+        <img src="./gallery/4.webp" alt="images">
+    </div>
+    <div id="second"  class="image-container firstlineimage mob2">
+        <img src="./gallery/5.webp" alt="images">
+    </div>
+    <div id="second" class="image-container firstlineimage mob2">
+        <img src="./gallery/6.webp" alt="images 6">
+    </div>
+    <div id="second"  class="image-container secondlineimage mob3">
+        <img src="./gallery/7.webp" alt="images 7">
+    </div>
+    <div id="second"  class="image-container secondlineimage mob3">
+        <img src="./gallery/8.webp" alt="images 8">
+    </div>
+    <div id="thrid"  class="image-container secondlineimage mob3">
+        <img src="./gallery/9.webp" alt="images 9">
+    </div>
+    <div id="thrid"  class="image-container secondlineimage mob4">
+        <img src="./gallery/10.webp" alt="images 10">
+    </div>
+    <div id="thrid"  class="image-container secondlineimage mob4">
+        <img src="./gallery/11.webp" alt="images 11">
+    </div>
+    <div id="thrid"  class="image-container secondlineimage mob4 overlay-container">
+        <img src="./gallery/12.webp" alt="Image 12">
+        <div class="overlay">
+            +9
+        </div>
+    </div>
+    
+    <span class="image-line"><hr id="line"  ></span>
+</div>
+
+
+
+<div id="section" class="price-container venue-details-div">
+    <div class="price-container-header">
+        <h1>Venue Details</h1>
+
+    </div>
+    <div class="price-container-h2 No_Rooms">
+        <span class="inline" style="display:inline;">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">No.of Rooms</p>
+        </span>
+        
+        <p class="lower-text">200</p>
+
+    </div>
+    <div class="price-container-h2 Hall_sq_ft">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Hall sq ft </p>
+        </span>
+        <p class="lower-text">1000 sq ft</p>
+    </div>
+    <div class="price-container-h2 Liquor_space">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Liquor space </p>
+        </span>
+        
+        <p class="lower-text">Yes</p>
+    </div>
+    <span class="Venue-line"><hr id="line"  ></span>
+</div>
+
+
+
+
+
+<div id="section" class="price-container Amenities">
+    <div class="price-container-header">
+        <h1>Amenities</h1>
+
+    </div>
+    <div class="price-container-h2 rent">
+        <span class="inline" style="display:inline;">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">AC</p>
+        </span>
+    </div>
+
+    <div class="price-container-h2 deposit">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Dining Hall </p>
+        </span>
+    </div>
+
+    <div class="price-container-h2 cash">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Lift</p>
+        </span>
+    </div>
+
+    <div class="price-container-h2 capacity">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Parking </p>
+        </span>
+    </div>
+
+    <div class="price-container-h2 capacity">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Gas pipeline </p>
+        </span>
+    </div>
+
+    <div class="price-container-h2 capacity">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">DJ</p>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Cupboard</p>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <img class="Price-details-svg" src="./details.png" alt="details" width="15px" height="15px">
+            <p class="upper-text">Bathrooms</p>
+        </span>
+    </div>
+    <span class="amenities-line"><hr id="line"  ></span>
+</div>
+
+
+<div id="section" class="price-container">
+    <div class="price-container-header">
+        <h1>Other Service</h1>
+
+    </div>
+    <div class="price-container-h2">
+        <span class="inline" style="display:inline;">
+            <div class="checkbox-wrapper-13">
+                <input id="c1-13" type="checkbox">
+                <p class="upper-text">Catering</p>
+              </div>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <div class="checkbox-wrapper-13">
+                <input id="c1-13" type="checkbox">
+                <p class="upper-text">Food Service</p>
+              </div>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <div class="checkbox-wrapper-13">
+                <input id="c1-13" type="checkbox">
+                <p class="upper-text">Decoration</p>
+              </div>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <div class="checkbox-wrapper-13">
+                <input id="c1-13" type="checkbox">
+                <p class="upper-text">Lighting </p>
+              </div>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <div class="checkbox-wrapper-13">
+                <input id="c1-13" type="checkbox">
+                <p class="upper-text">DJ </p>
+              </div>
+        </span>
+    </div>
+
+    <div class="price-container-h2">
+        <span class="inline">
+            <div class="checkbox-wrapper-13">
+                <input id="c1-13" type="checkbox">
+                <p class="upper-text">Rental Cars</p>
+              </div>
+        </span>
+    </div>
+    <span class="os-line"><hr id="line"  ></span>
+</div>
+
+
+<div class="venue-details">
+    <div class="price-container-header">
+        <h1>Venue Rules </h1>
+        <p style="font-size: 12px;">Abinaya Hall is a banquet hall based out of Chennai. Weddings are the most important event in a person's life. There are numerous dreams, and ideas that come attached with it. To find that perfect venue is one of those many things of the checklist of all the things which you would like to have on your big day. Since its inception, this banquet hall has been proving their niche in the hospitality and wedding industry. They have under their belt an enthusiastic bunch of members and staff members who strive to make your functions a smashing hit.</p>
+    </div>
+</div>
+
+<hr>
+<div class="bottom">
+    <div class="bottom-left">
+        <div><img src="./main_logo.png" alt="page_logo" width="40px"></div>
+        <p class="bottom-text">This web page is developed using only plain HTML and CSS, meaning it focuses solely on the user interface (UI) and is designed as a static page. It does not include any dynamic functionality, server-side processing, or interactive elements powered by JavaScript or other backend technologies. The primary purpose is to create a visually appealing, fixed layout that serves as a simple and static representation of the intended design.</p>
+        <a class="bottom-link" href="www.google.com">click here to know more</a><img src="./top-arrow.png" alt="right-arrow" width="10px">
+    </div>
+    <div class="bottom-right">
+        <div class="bottom-col">
+            <p class="bottom-col-header">Company</p>
+            <div class="bottom-col-para">
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Careers</p>
+                <p>Refer a friend</p>
+                <p>Best Service</p>
+            </div>
+        </div>
+
+        <div class="bottom-col newhide">
+            <p class="bottom-col-header">To Be Wed</p>
+            <div class="bottom-col-para">
+                <p>My Account</p>
+                <p>Find a vender</p>
+                <p>Blogs</p>
+                <p>Best venue</p>
+                <p>Interface</p>
+                <p>Price details</p>
+            </div>
+        </div>
+
+        <div class="bottom-col">
+            <p class="bottom-col-header">Venders</p>
+            <div class="bottom-col-para">
+                <p>Stage</p>
+                <p>Dining</p>
+                <p>Resort</p>
+                <p>Mandapams </p>
+            </div>
+        </div>
+
+        <div class="bottom-col">
+            <p class="bottom-col-header">Contact with us</p>
+            <div class="bottom-col-para">
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<hr>
+
+<footer >
+    <p>&copy; 2023 Confluence Banquets & Resorts. All rights reserved.</p>
+</footer>
+<script>
+    function validateSearchForm(event) {
+        event.preventDefault(); 
+        const locationInput = document.getElementById("h-location-input");
+        const searchInput = document.getElementById("h-search-input");
+
+        if (locationInput.value === "") {
+            alert("Please select a location.");
+            return false;
+        }
+
+        if (searchInput.value.trim() === "") {
+            alert("Please enter a search term.");
+            return false;
+        }
+        alert("Search initiated!");
+        return true;
+    }
+
+    function getSelectedServices() {
+        const checkboxes = document.querySelectorAll('.checkbox-wrapper-13 input[type="checkbox"]');
+        const selectedServices = [];
+
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                const serviceLabel = checkbox.nextElementSibling.textContent.trim();
+                selectedServices.push(serviceLabel);
+            }
+        });
+
+        if (selectedServices.length > 0) {
+            alert(`Selected Services: ${selectedServices.join(', ')}`);
+        } else {
+            alert("No services selected.");
+        }
+    }
+
+    // Add event listener for "Get Assistance" button
+    document.querySelector('.pushable').addEventListener('click', getSelectedServices);
+</script>
+
+</body>
+</html>
